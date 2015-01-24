@@ -14,7 +14,7 @@ def parse_args():
                         help='file to which results should be written')
     parser.add_argument('--delimiter', dest='delimiter', default=',',
                         help='the type of delmiter to read and write with' +
-                               'defaults to \',\''))
+                               'defaults to \',\'')
     return parser.parse_args()
 
 

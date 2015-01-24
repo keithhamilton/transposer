@@ -56,6 +56,24 @@ Or grab this repo and run:
 
    $ python setup.py install
 
+Then, in your project file:
+
+.. code-block:: python
+
+   import transposer
+
+   # this will output a file.
+   transposer.transpose(i='cols.csv', o='rows.csv')
+   
+   # this will just keep the transposition in memory
+   rows = transposer.transpose(i='cols.csv', o=None)
+
+   # so will this
+   rows = transposer.transpose(i='cols.csv')
+
+   # the delimiter defaults to a comma. Use pipes too.
+   transposer.transpose(i='cols.txt', o='rows.txt', d='|')
+
 
 License
 -------

@@ -30,12 +30,12 @@ setup(
     packages=find_packages(exclude=['contrib', 'docs', 'test*', 'bin', 'include', 'lib', '.idea']),
     install_requires=[],
     package_data={
-        'script': ['console_scripts.py']
+       #'script': ['transposer.script.console_scripts.py']
     },
     data_files=[],
     entry_points={
-        'console_scripts': [
-           'transposer=script.console_scripts:main'
-        ]
+        #'console_scripts': [
+        #   'transposer=transposer.script.console_scripts:main'
+        #]
     }
 )
