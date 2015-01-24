@@ -9,7 +9,7 @@ def read(*paths):
 
 setup(
     name='transposer',
-    version='0.0.2',
+    version='0.0.3',
     description='Transposes columns and rows in delimited text files',
     long_description=(read('README.rst')),
     url='https://github.com/keithhamilton/transposer',
@@ -20,7 +20,7 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved ::  License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
@@ -29,13 +29,11 @@ setup(
     keywords='text, csv, tab-delimited, delimited, excel, sheet, spreadsheet',
     packages=find_packages(exclude=['contrib', 'docs', 'test*', 'bin', 'include', 'lib', '.idea']),
     install_requires=[],
-    package_data={
-       #'script': ['transposer.script.console_scripts.py']
-    },
+    package_data={},
     data_files=[],
     entry_points={
-        #'console_scripts': [
-        #   'transposer=transposer.script.console_scripts:main'
-        #]
+        'console_scripts': [
+           'transposer=transposer.script.console_scripts:main'
+        ]
     }
 )
