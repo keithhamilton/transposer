@@ -1,17 +1,17 @@
 from setuptools import setup, find_packages
 from codecs import open
-from os import path
+import os
 
-here = path.abspath(path.dirname(__file__))
-
-with open(path.join(here, 'DESCRIPTION.rst'), encoding='utf-8') as f:
-   long_description = f.read()
+def read(*paths):
+    """Build a file path from *paths* and return the contents."""
+    with open(os.path.join(*paths), 'r') as f:
+        return f.read()
 
 setup(
     name='transposer',
     version='0.0.1',
     description='Transposes columns and rows in delimited text files',
-    long_description=long_description,
+    long_description=(read('README.rst')),
     url='https://github.com/keithhamilton/transposer',
     author='Keith Hamilton',
     maintainer='Keith Hamilton',
