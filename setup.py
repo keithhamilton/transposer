@@ -9,7 +9,7 @@ def read(*paths):
 
 setup(
     name='transposer',
-    version='0.0.1',
+    version='0.0.2',
     description='Transposes columns and rows in delimited text files',
     long_description=(read('README.rst')),
     url='https://github.com/keithhamilton/transposer',
@@ -20,7 +20,7 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
