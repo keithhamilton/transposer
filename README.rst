@@ -1,7 +1,7 @@
 transposer
 ==========
 You got columnar data? Turn that into row-wise data!! You got
-row-wise data?? Turn it into columnar data!!! SAY WUT?!?
+row-wise data?? Turn it into columnar data!!! WUT?!?
 
 (transposer transposes columns and rows in delimited text files)
 
