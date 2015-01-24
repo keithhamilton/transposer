@@ -59,7 +59,22 @@ Or grab this repo and run:
 
    $ python setup.py install
 
-Then, in your project file:
+Using
+-----
+transposer can be used both on the command line as well as in a Python project.
+
+Command Line
+~~~~~~~~~~~~
+
+::
+
+   $ transposer -i 'my_file.csv' -o 'out_file.csv'
+   $ transposer -i 'my_file.txt' -d '|'
+   $ transposer --in 'my_file.txt' -d '\t'
+
+Module-based
+~~~~~~~~~~~~
+In your project file:
 
 .. code-block:: python
 
