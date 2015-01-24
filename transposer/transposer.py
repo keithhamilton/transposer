@@ -3,7 +3,11 @@
 takes contents of delimited file and transposes columns and rows
 outputs to txt file
 '''
-import argparse
+import re
+
+def detect_delimiter(row):
+    pattern = re.compile(r'[a-zA-Z0-9"\']')
+    return pattern.sub('', row)[0]
 
 def transpose(i, o=None, d=','):
     f = open (i, 'r')

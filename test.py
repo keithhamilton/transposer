@@ -58,5 +58,17 @@ class TestTransposer(unittest.TestCase):
             self.assertEqual(out_data[i].strip(), original_lines[i].strip())
         
 
+    def test_auto_detect_delimiter(self):
+        tab_delimited = 'FirstName\tLastName\tAge\tWeight'
+        comma_delimited = 'FirstName,LastName,Age,Weight'
+        pipe_delimited = 'FirstName|LastName|Age|Weight'
+        
+        csv_with_quotes = '"FirstName","LastName","Weight"'
+
+        self.assertEqual(transposer.detect_delimiter(tab_delimited), '\t')
+        self.assertEqual(transposer.detect_delimiter(comma_delimited), ',')
+        self.assertEqual(transposer.detect_delimiter(pipe_delimited), '|')
+        self.assertEqual(transposer.detect_delimiter(csv_with_quotes), ',')
+        
 if __name__ == '__main__':
     unittest.main()

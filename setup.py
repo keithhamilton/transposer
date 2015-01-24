@@ -20,7 +20,7 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
-        'License :: OSI Approved ::  License',
+        'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
@@ -33,7 +33,7 @@ setup(
     data_files=[],
     entry_points={
         'console_scripts': [
-           'transposer=transposer.script.console_scripts:main'
+           'transposer=transposer.script.console_script:main'
         ]
     }
 )
