@@ -31,10 +31,13 @@ transposer would take these three rows, and transpose the data as follows:
 If you wanted to transform the row-wise data back into its former columnar self,
 you would just run transposer against the transposed data.
 
+transposer also works well with different types of delimiters, you just need
+to declare which type you are working with (default is comma-separated).
+
 But, Keith
 ----------
 It's so easy to transpose that kind of data by hand. Why would I want to use 
-a library for it?
+a package for it?
 
 Yeah, transposing three rows is easy to do by hand. Try 100,000. transposer will
 do that work for you so you can do better things like watch reruns of The
@@ -77,6 +80,4 @@ Then, in your project file:
 
 License
 -------
-This is licensed under the BSD 3-Clause License. Feel free to fork, tweak, do 
-whatever, as long as you attribute me. Or just rip it off, it's not like this
-code is earth-shattering.
+transposer uses the MIT license, and is free for you.
